@@ -6,6 +6,16 @@
  * Author:Epsilon
  */
 
+add_action('init', function () {
+    register_post_type('formations', [
+        'label' => 'formations',
+        'public' => true,
+        'menu_icon' => 'dashicons-html'
+
+    ]);
+});
+
+
 acf_add_local_field_group([
     'key' => 'Formation Simplon',
     'title' => 'Formation Simplon',
